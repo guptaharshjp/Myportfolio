@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesom -->
+    <script src="https://kit.fontawesome.com/5e5378ba58.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/hiii.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <section class="first">
+            <div class="header-txt">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span class="new">Harsh</span><br>Gupta from Delhi</h1>
+            </div>
+            <div class="rightsection">
+                <img src="image/back1.avif" alt="">
+            </div>
+        </section>
+        </div>
+   
+        <div class="imagepp">
+
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about.jpeg" alt="">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Hello! I'm Harsh Gupta, a 21-year-old student currently studying at VIT Chennai. I am passionate
+                        about web development and have acquired skills in HTML, CSS, and JavaScript to create visually
+                        appealing and functional websites. Additionally, I have a solid foundation in programming
+                        languages like Java and C++, which enables me to develop applications and solve problems
+                        efficiently. <br></p><br><p>I enjoy taking on new challenges and constantly expanding my knowledge. Being a
+                        quick learner, I can adapt to new technologies and frameworks swiftly. I remain focused and motivated to deliver exceptional results even when faced with tight deadlines or demanding circumstances.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Dev</span><br>Designing Portfolio
+
+                            </li>
+                            <li>
+                                <span>SQL</span><br>Designing Portfolio
+
+                            </li>
+                            <li>
+                                <span>Phython</span><br>Designing Portfolio
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li>
+                                <span>Zomato-Clone</span><br>Web Page similar to Zomato site
+
+                            </li>
+                            <li>
+                                <span>Task Managment</span><br>To add the task with image, type ,title <br>and
+                                description
+
+                            </li>
+                            <li>
+                                <span>Maze solving car</span><br>Robotics Projects
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>School</span><br>Kamal Model Sr Sec School,<br>New delhi
+
+                            </li>
+                            <li>
+                                <span>Collage</span><br>Vellore Institute Of Technology,<br>Chennai
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>HTML ,CSS ,JavaScript</p>
+                    <p>Bootstarp</p>
+                    <p>Nodejs,Express js</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>SQL </h2>
+                    <p>Database Design</p>
+                    <p>Querying Data</p>
+                    <p>Data Manipulation</p>
+                    <p>Joins and Relationships</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coder</h2>
+                    <p>C and C++ </p>
+                    <p>Java</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Zomato-Clone</h3>
+                        <p>This project is a clone of zamoto site which is created using html,css and we have used buttons to make it interative and it is responsive as well.</p>
+                        <a href="#"><i class="fa-solid fa-clone"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Task Managment</h3>
+                        <p>This project is about adding task which we wanna do.It includes image box,Title,Task type and descripition of the task.It is created using Bootstarp</p>
+                        <a href="#"><i class="fa-solid fa-list-check"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sun-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>harshgupta25012002@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt    "></i>9910803177</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100010933961334"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_inamorato___/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harsh-gupta-500b8a257/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/guptaharshjp"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="image/RESUME.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet ">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Sumbit" class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright@ HarshGupta</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+    <script>
+
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemen.style.right = "0";
+        }
+        function closemenu() {
+            sidemen.style.right = "-200px";
+        }
+    </script>   
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMgtXEDAhmKmC0g6MG7YJv8ruxYPk45PK_De_Eco_TQUdtf-9WW7PptW6c3cpgCYJ_yQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+
+<!-- https://guptaharshjp.github.io/Myportfolio/ -->
